@@ -12,4 +12,4 @@ function displayImage(src,amount, width = 200, height = 200) {
     document.body.appendChild(imgBox);
    }
 
-displayImage("./resources/pictures/",4);
+displayImage("./resources/pictures/",5);
