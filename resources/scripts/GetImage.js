@@ -1,9 +1,8 @@
-function displayImage(src,amount, width = 200, height = 200) {
+function displayImage(src,picnum) {
     var imgBox = document.createElement("div");
     var img = document.createElement("img");
-    var rand = parseInt(Math.random()*amount);
     imgBox.className = "imgbox";
-    img.src = src+rand+".jpg";
+    img.src = src+picnum+".jpg";
     img.className = "image";
     var imgblur = img.cloneNode();
     imgBox.appendChild(img);
@@ -12,4 +11,6 @@ function displayImage(src,amount, width = 200, height = 200) {
     document.body.appendChild(imgBox);
    }
 
-displayImage("./resources/pictures/",5);
+   var rand = parseInt(Math.random()*5);
+   
+displayImage("./resources/pictures/",rand);
