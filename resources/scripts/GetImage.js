@@ -5,7 +5,10 @@ function displayImage(src,amount, width = 200, height = 200) {
     imgBox.className = "imgbox";
     img.src = src+rand+".jpg";
     img.className = "image";
-    imgBox.appendChild(img)
+    var imgblur = img.cloneNode();
+    imgBox.appendChild(img);
+    imgblur.className = "blur";
+    imgBox.appendChild(imgblur);
     document.body.appendChild(imgBox);
    }
 

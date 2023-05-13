@@ -1,5 +1,6 @@
 *
 {
+    background-color: black;
     margin: 0;
     padding: 0;
 }
@@ -11,8 +12,19 @@
 }
 
 .image
-{
-    max-width: 100%;
+{   
+    Grid-column: 1/span 8;
+    Grid-row: 1; 
     max-height: 100vh;
-    margin: auto;
+    margin: auto;  
+z-index: 1; 
+}
+
+.blur
+{
+    grid-column: 1/span 8;
+    grid-row: 1; 
+    max-height: 100vh;
+    margin: auto;  
+    filter: blur(10vh);
 }
