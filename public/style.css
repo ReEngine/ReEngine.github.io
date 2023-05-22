@@ -14,12 +14,13 @@ body {
 }
 
 .blur {
-    filter: blur(10vh);
+    -webkit-filter: blur(10vh);
+  
 }
 
-.image, .blur {
+.blur, .image {
     grid-column: 1/span 8;
     grid-row: 1; 
-    max-height: 100vh;
     margin: auto;  
+    max-height: 100vh;
 }
