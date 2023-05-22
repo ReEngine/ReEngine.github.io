@@ -13,4 +13,4 @@ function displayImage(src,picnum) {
 
    var rand = parseInt(Math.random()*5);
    
-displayImage("./resources/pictures/",rand);
+displayImage("./public/assets/images/",rand);
